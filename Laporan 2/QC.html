@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step by Step Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 40px 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .step-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+        }
+        
+        .step {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #3498db;
+            background: rgba(52, 152, 219, 0.1);
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        
+        .step-content {
+            margin-top: 40px;
+        }
+        
+        .step-image {
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .step-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .step-description {
+            margin-top: 25px;
+            font-size: 25px;
+            line-height: 1.7;
+            color: #34495e;
+            padding: 0 20px;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 25px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: #0d6efd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .step-container {
+                padding: 10px;
+            }
+            
+            .step {
+                padding: 20px;
+            }
+            
+            .step-number {
+                font-size: 24px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+                margin: 30px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-button">Kembali</a>
+    <div class="step-container">
+        <h1>Panduan Langkah demi Langkah Quality Control</h1>
+        
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <img src="src_QC/WhatsApp Image 2024-10-28 at 14.34.06_4800490c.jpg" alt="Langkah 1" class="step-image">
+                    <div class="step-description">
+                        Menggunakan Atribut K3.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <img src="src_QC/form qc.png" alt="Langkah 2" class="step-image">
+                    <div class="step-description">
+                        Siapkan Form Quality Control.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <img src="src_QC/hubungi mitra.png" alt="Langkah 3" class="step-image">
+                    <div class="step-description">
+                        Hubungi Mitra Untuk Mengetahui Rute Yang Di Tentukan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <img src="src_QC/buka maps.png" alt="Langkah 4" class="step-image">
+                    <div class="step-description">
+                        Buka Maps Pembangunan Yang Sudah Di Berikan Oleh Mitra.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <img src="src_QC/WhatsApp Image 2024-11-08 at 14.46.34_732ce7bb.jpg" alt="Langkah 5" class="step-image">
+                    <div class="step-description">
+                        Pergi Ke Titik Kumpul Yang Telah Di Tentukan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <img src="src_QC/WhatsApp Image 2024-10-14 at 12.09.26_2c113e93.jpg" alt="Langkah 6" class="step-image">
+                    <div class="step-description">
+                        Briefing Quality Control Bersama Dengan Mitra.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <img src="src_QC/IMG-20241113-WA0016.jpg" alt="Langkah 7" class="step-image">
+                    <div class="step-description">
+                        Kabel Fiber Optic.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-content">
+                    <img src="src_QC/IMG-20241107-WA0054.jpg" alt="Langkah 8" class="step-image">
+                    <div class="step-description">
+                        JB (Joint Box).
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">9</div>
+                <div class="step-content">
+                    <img src="src_QC/QC ANTOSARI_SM0014_-8.50426, 115.03706_16102024_133932.jpg" alt="Langkah 9" class="step-image">
+                    <div class="step-description">
+                        Box DCU.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">10</div>
+                <div class="step-content">
+                    <img src="src_QC/label acc.jpg" alt="Langkah 11" class="step-image">
+                    <div class="step-description">
+                        Label Dan Accessories.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">11</div>
+                <div class="step-content">
+                    <img src="src_QC/form qc.png" alt="Langkah 12" class="step-image">
+                    <div class="step-description">
+                        Isi Form Quality Control Sesuai Dengan Data Yang Di Dapatkan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">12</div>
+                <div class="step-content">
+                    <img src="src_QC/perjalan ke kantor.jpg" alt="Langkah 13" class="step-image">
+                    <div class="step-description">
+                        Jika Sudah Selesai Melakukan Quality Control Bersama Mitra, Kita Melakukan Perjalanan Kembali Ke Kantor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
